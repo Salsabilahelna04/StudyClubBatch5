@@ -12,6 +12,7 @@ class Home extends StatefulWidget {
 }
 
 class _MyHome extends State<Home> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,10 +68,12 @@ class _MyHome extends State<Home> {
         unselectedItemColor: Colors.grey[500],
         onTap: (index) {
           if (index == 0) Navigator.popAndPushNamed(context, '/');
-          if (index == 1) Navigator.popAndPushNamed(context, '/profile');
+          if (index == 1) Navigator.popAndPushNamed(context, '/transaksi');
+          if (index == 2) Navigator.popAndPushNamed(context, '/profile');
         },
         items: const [
           BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
+          BottomNavigationBarItem(label: "History", icon: Icon(Icons.history)),
 
           // BottomNavigationBarItem(label: "Order", icon: Icon(Icons.list)),
           BottomNavigationBarItem(label: "Me", icon: Icon(Icons.person)),
