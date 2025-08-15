@@ -64,12 +64,12 @@ class Profile extends StatelessWidget {
                         ),
                         child: const CircleAvatar(
                           radius: 60,
-                          backgroundImage: AssetImage('Assets/image/gambar.jpg'),
+                          backgroundImage: AssetImage('Assets/image/profile.png'),
                         ),
                       ),
                       const SizedBox(height: 12),
                       const Text(
-                        "Salsabila",
+                        "Salsabila Helna Athifah",
                         style: TextStyle(
                           fontSize: 26,
                           color: Colors.white,
